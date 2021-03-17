@@ -1,0 +1,6 @@
+#!/bin/bash
+
+echo Iniciando Red...
+echo Configurando...
+sudo service NetworkManager stop
+sudo hostapd /etc/hostapd/my-wlan.conf
