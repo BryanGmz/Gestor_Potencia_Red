@@ -5,7 +5,11 @@
 # $2 = Nombre de la tarjeta de red
 # $3 = Nomnre de la tarjeta wifi
 # $4 = Nombre de la Conexion Cableada 
-
+echo Parametros
+echo 1 -> Nombre del puente
+echo 2 -> Nombre de la tarjeta de red
+echo 3 -> Nomnre de la tarjeta wifi
+echo 4 -> Nombre de la Conexion Cableada
 sudo nmcli conn add type bridge con-name $1 ifname $1
 sudo nmcli conn add type ethernet slave-type bridge con-name bridge-br0 ifname $2 master $1
 sudo nmcli conn up $1

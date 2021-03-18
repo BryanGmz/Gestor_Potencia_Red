@@ -3,4 +3,6 @@
 echo Iniciando Red...
 echo Configurando...
 sudo service NetworkManager stop
-sudo hostapd /etc/hostapd/my-wlan.conf
+sudo nohup hostapd /etc/hostapd/my-wlan.conf &
+echo ---------------------Red Inciada------------------------
+
